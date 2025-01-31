@@ -1,0 +1,85 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe6f0;  /* Light pink background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main container styling */
+.container {
+    background-color: #c4e2bb;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e91e63;  /* Bright pink color */
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 2.0rem;
+    color: #ffffff85;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.heart-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: #e91e63;
+    margin: 0 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: pulse 1.5s infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #e91e63;
+    border-radius: 50%;
+}
+
+.heart:before {
+    left: 50px;
+}
+
+.heart:after {
+    top: -50px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color
+}
